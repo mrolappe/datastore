@@ -3,9 +3,11 @@
 ;; It also behaves this way if all parenthesized groups do not 'capture',
 ;; because they begin with ?:
 
-user=> (re-find #"\d+" "abc123def")
-"123"
-user=> (re-find #"\d+" "abcdef")
-nil
-user=> (re-find #"(?:\d+)" "abc123def")
-"123"
+(re-find #"\d+" "abc123def")
+;; => "123"
+
+(re-find #"\d+" "abcdef")
+;; => nil
+
+(re-find #"(?:\d+)" "abc123def")
+;; => "123"
