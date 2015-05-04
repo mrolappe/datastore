@@ -1,8 +1,7 @@
-user=> (use 'clojure.java.javadoc)
-nil
+(require '[clojure.java.javadoc])
 
-user=> (javadoc String)
-"http://java.sun.com/javase/6/docs/api/java/lang/String.html"
+(javadoc String)
+;; => "http://java.sun.com/javase/6/docs/api/java/lang/String.html"
 
-user=> (javadoc (java.util.Date.))
-"http://java.sun.com/javase/6/docs/api/java/util/Date.html"
+(javadoc (java.util.Date.))
+;; => "http://java.sun.com/javase/6/docs/api/java/util/Date.html"
