@@ -1,10 +1,10 @@
-; Using the simple threading macro ->
+;; Using the simple threading macro ->
 (-> shape
-  (rotate 30)
-  (scale 1.2)
-  (translate 10 -2))
+    (rotate 30)
+    (scale 1.2)
+    (translate 10 -2))
 
-; Using as->
+;; Using as->
 (as-> shape s
   (rotate s 30)
   (scale s 1.2)
