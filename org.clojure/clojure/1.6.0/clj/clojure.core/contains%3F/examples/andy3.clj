@@ -5,9 +5,14 @@
 ;; The behavior is the same for vectors, except only integer values
 ;; can return true.
 
-user=> (contains? "abcdef" 5)
-true       ; max string index is 5
-user=> (contains? [:a :b :c] 1)
-true       ; max vector index is 2
-user=> (contains? (int-array [28 35 42 49]) 10)
-false      ; max array index is 3
+;; max index for this string is 5
+(contains? "abcdef" 5)
+;; => true
+
+;; max index for this vector is 2
+(contains? [:a :b :c] 1)
+;; => true
+
+;; max index for this array is 3
+(contains? (int-array [28 35 42 49]) 10)
+;; => false
