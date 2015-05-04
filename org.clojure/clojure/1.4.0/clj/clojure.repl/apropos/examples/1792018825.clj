@@ -1,8 +1,10 @@
-user=> (apropos "temp")
-()
+(require '[clojure.repl :refer [apropos]])
 
-user=> (require 'clojure.template)
-nil
+(apropos "temp")
+;; => ()
 
-user=> (apropos "temp")
-(apply-template do-template)
+(require 'clojure.template)
+;; => nil
+
+(apropos "temp")
+;; => (apply-template do-template)
