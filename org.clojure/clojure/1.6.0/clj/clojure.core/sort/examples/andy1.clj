@@ -3,6 +3,7 @@
 
 ;; Note that sort can also use a custom comparator, here for instance to reverse
 ;; the sorting order.
+
 (sort #(compare %2 %1)
       '(apple banana aardvark zebra camel))
 ;; => (zebra camel banana apple aardvark)
