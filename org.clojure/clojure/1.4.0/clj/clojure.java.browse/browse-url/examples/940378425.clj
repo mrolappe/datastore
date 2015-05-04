@@ -1,3 +1,4 @@
-user=> (use 'clojure.java.browse)
+(use 'clojure.java.browse)
 
-user=> (browse-url "http://clojuredocs.org")
+;; Opens the Grimoire homepage in a browser
+(browse-url "http://conj.io")
