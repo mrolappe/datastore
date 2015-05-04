@@ -1,10 +1,13 @@
-(use 'clojure.data)
+(require '[clojure.data :refer [diff]])
 (def uno {:same "same", :different "one"})
 (def dos {:same "same", :different "two", :onlyhere "whatever"})
+
 (diff uno dos)
-=> ({:different "one"} {:onlyhere "whatever", :different "two"} {:same "same"})
-;;  {different in uno} {     different or unique in dos       } {same in both}
+;; => ({:different "one"}                       ; different in lhs
+;;     {:onlyhere "whatever", :different "two"} ; different in rhs
+;;     {:same "same"})                          ; same in both
+
 (diff {:a 1} {:a 1 :b 2})
-=> (nil {:b 2} {:a 1})
-;; the first contains nothing unique, but only the second contains :b
-;; and both contain :a
+;; => (nil
+;;     {:b 2}
+;;     {:a 
