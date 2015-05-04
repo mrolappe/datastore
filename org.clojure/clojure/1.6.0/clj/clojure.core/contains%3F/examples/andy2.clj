@@ -1,8 +1,15 @@
-user=> (contains? {:a "a" nil "nil"} :a)   ; key :a is in the map
-true
-user=> (contains? {:a "a" nil "nil"} :b)   ; :b is not
-false
-user=> (contains? {:a "a" nil "nil"} nil)  ; nil is a key here
-true
-user=> (contains? {:a "a"} nil)            ; but not here
-false
+;; key :a is in the map
+(contains? {:a "a" nil "nil"} :a)   
+;; => true
+
+;; :b is not
+(contains? {:a "a" nil "nil"} :b)  
+;; => false
+
+;; nil is a key here
+(contains? {:a "a" nil "nil"} nil)  
+;; => true
+
+;; but not here
+(contains? {:a "a"} nil)
+;; => false
