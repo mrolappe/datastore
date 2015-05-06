@@ -1,4 +1,4 @@
-(require '[clojure.java.javadoc])
+(require '[clojure.java.javadoc :refer [javadoc]])
 
 (javadoc String)
 ;; => "http://java.sun.com/javase/6/docs/api/java/lang/String.html"
