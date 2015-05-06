@@ -6,6 +6,7 @@
 ;; nil is falsey so (+ nil nil) - which would throw a null pointer exception if
 ;; evaluated is not evaluated. This makes a very convenient guard for
 ;; conditional imperative blocks which could otherwise error out.
+
 (when-let [a nil]
   (+ a a))
 ;; => nil
