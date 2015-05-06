@@ -14,5 +14,6 @@
 ;; => true
 
 ;; only integer values can return true for vectors
+
 (contains? [:a :b :c] 0.5)
 ;; => false
