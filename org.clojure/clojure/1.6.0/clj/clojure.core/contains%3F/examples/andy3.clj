@@ -10,9 +10,11 @@
 ;; => true
 
 ;; max index for this vector is 2
+
 (contains? [:a :b :c] 1)
 ;; => true
 
 ;; max index for this array is 3
+
 (contains? (int-array [28 35 42 49]) 10)
 ;; => false
