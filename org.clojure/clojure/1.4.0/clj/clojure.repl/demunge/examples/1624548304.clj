@@ -1,2 +1,2 @@
-user=> (-> + class str demunge)
-"class clojure.core/+"
+(-> + class str demunge)
+;; => "class clojure.core/+"
