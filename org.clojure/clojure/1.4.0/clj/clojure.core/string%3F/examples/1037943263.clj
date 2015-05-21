@@ -1,11 +1,11 @@
-user=> (string? \a)
-false
+(string? \a)
+;; => false
 
-user=> (string? "abc")
-true
+(string? "abc")
+;; => true
 
-user=> (string? 1)
-false
+(string? 1)
+;; => false
 
-user=> (string? ["a" "b" "c"])
-false
+(string? ["a" "b" "c"])
+;; => false
