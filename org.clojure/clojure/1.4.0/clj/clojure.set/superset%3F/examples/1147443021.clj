@@ -1,10 +1,11 @@
-(use '[clojure.set :only [superset?]])
+(require '[clojure.set :refer [superset?]])
+;; => nil
 
-user=> (superset? #{0} #{0})
-true
+(superset? #{0} #{0})
+;; => true
 
-user=> (superset? #{0 1} #{0})
-true
+(superset? #{0 1} #{0})
+;; => true
 
-user=> (superset? #{0} #{0 1}) 
-false
+(superset? #{0} #{0 1}) 
+;; => false
