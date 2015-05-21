@@ -1,7 +1,14 @@
-(def xmlzipper (clojure.zip/xml-zip (clojure.xml/parse "resources/somedata.xml")))
+(require '[clojure.zip :as z]
+         '[clojure.xml :as xml])
+;; => nil
 
-;;make a zippper pointing at the children to the topnode in somedata.xml
-(clojure.zip/children xmlzipper)
+(def xmlzipper
+  (z/xml-zip
+   (xml/parse "resources/somedata.xml")))
+;; => #'user/xmlzipper
+
+;; make a zippper pointing at the children to the topnode in somedata.xml
+(z/children xmlzipper)
 
  
 
