@@ -1,13 +1,15 @@
-user=> (use 'clojure.walk)
+(require '[clojure.walk :refer :all])
 
-; tryclj.com and lazybot on #clojure get the following wrong
-user=> (let [-> inc] (-> 5)) 
-6
+;; tryclj.com and lazybot on #clojure get the following wrong
+(let [-> inc] ;; rebind the -> symbol locally to the inc function
+  (-> 5)) ;; this is now the same as (inc 5)
+;; => 6
 
-; Below macroexpansion is supposed to result in equivalent code to the above
-user=> (macroexpand-all '(let [-> inc] (-> 5)))
+;; Below macroexpansion is supposed to result in equivalent code to the above
+(macroexpand-all '(let [-> inc] (-> 5)))
+;; => (let* [-> inc] 5)
+
+;; And now to run the macroexpansion as above...
 (let* [-> inc] 5)
-user=> (let* [-> inc] 5)
-5
-
-; However, as is clear above, it does not
+;; => 5
+;; which clearly is not the same result as above
