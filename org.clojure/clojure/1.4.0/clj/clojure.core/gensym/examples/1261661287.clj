@@ -1,6 +1,6 @@
-user=> (gensym)
-G__2034
+(gensym)
+;; => G__2034
 
-user=> (let [my-unique-sym (gensym)]
+(let [my-unique-sym (gensym)]
          my-unique-sym)
-G__2075
+;; => G__2075
