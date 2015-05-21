@@ -1,19 +1,19 @@
 ;; continuing from the previous with-meta example
-user=> (def wm (with-meta [1 2 3] {:my "meta"}))
-#'user/wm
+(def wm (with-meta [1 2 3] {:my "meta"}))
+;; => #'user/wm
 
-user=> wm
-[1 2 3]
+wm
+;; => [1 2 3]
 
-user=> (meta wm)
-{:my "meta"}
+(meta wm)
+;; => {:my "meta"}
 
-user=> (def new-wm (vary-meta wm assoc :your "new meta"))
-#'user/new-wm
+(def new-wm (vary-meta wm assoc :your "new meta"))
+;; => #'user/new-wm
 
-user=> new-wm
-[1 2 3]
+new-wm
+;; => [1 2 3]
 
-user=> (meta new-wm)
-{:my "meta", :your "new meta"}
+(meta new-wm)
+;; => {:my "meta", :your "new meta"}
 
