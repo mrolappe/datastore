@@ -1,11 +1,14 @@
-user> (clojure.string/blank? nil)
-true
+(require '[clojure.string :refer [blank?]])
+;; => nil
 
-user> (clojure.string/blank? false)
-true
+(blank? nil)
+;; => true
 
-user> (clojure.string/blank? "   ")
-true
+(blank? false)
+;; => true
 
-user> (clojure.string/blank? " a ")
-false
+(blank? "   ")
+;; => true
+
+(blank? " a ")
+;; => false
