@@ -1,9 +1,11 @@
-user=>(require '[clojure.zip :as zip])
-nil
-user=> (def original [1 '(a b c) 2])
-#'user/original
-user=> (def root-loc (zip/seq-zip (seq original)))
-#'user/root-loc
+(require '[clojure.zip :as zip])
+;; => nil
 
-user=> (zip/node (zip/down root-loc))
-1
+(def original [1 '(a b c) 2])
+;; => #'user/original
+
+(def root-loc (zip/seq-zip (seq original)))
+;; => #'user/root-loc
+
+(zip/node (zip/down root-loc))
+;; => 1
