@@ -1,8 +1,16 @@
-user=> (def f (future (inc 0)))
-#'user/f
+(def f (future (inc 0)))
+;; => #'user/f
 
-user=> (future? f)
-true
+(future? f)
+;; => true
 
-user=> (future? 1)
-false
+(future? 1)
+;; => false
+
+;; deref gets the value (result) of a future
+(deref f)
+;; => 1
+
+;; the @ reader macro expands to deref
+@f
+;; => 1
