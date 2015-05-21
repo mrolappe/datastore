@@ -1,4 +1,5 @@
-(use '[clojure.java.shell :only [sh]])
+(require '[clojure.java.shell :refer [sh]])
+;; => nil
 
 ;; Note: The actual output you see from a command like this will look messier.
 ;; The output below has had all newline characters replaced with line
