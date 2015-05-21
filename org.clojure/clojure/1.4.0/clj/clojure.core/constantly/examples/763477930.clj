@@ -1,9 +1,11 @@
-user=> (def boring (constantly 10))
-#'user/boring
+(def boring (constantly 10))
+;; => #'user/boring
 
-user=> (boring 1 2 3)
-10
-user=> (boring)
-10
-user=> (boring "Is anybody home?")
-10
+(boring 1 2 3)
+;; => 10
+
+(boring)
+;; => 10
+
+(boring "Is anybody home?")
+;; => 10
