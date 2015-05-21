@@ -1,3 +1,5 @@
-(use 'clojure.string)
+(require '[clojure.string :refer [trimr]])
+;; => nil
+
 (trimr "        my string         ")
-=> "        my string"
+;; => "        my string"
