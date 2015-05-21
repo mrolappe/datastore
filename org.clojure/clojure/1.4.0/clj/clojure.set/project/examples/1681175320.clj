@@ -1,3 +1,6 @@
+(require '[clojure.set :refer [project]])
+;; => nil
+
 ;; `project` strips out unwanted key/value pairs from a set of maps. 
 ;; Suppose you have these descriptions of cows:
 
