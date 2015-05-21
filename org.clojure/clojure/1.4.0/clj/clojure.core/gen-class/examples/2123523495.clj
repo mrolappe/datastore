@@ -37,11 +37,14 @@
 
 ;; running it -- you must compile and put output on the classpath
 ;; create a Demo, check the default value, then set it and check again.
-user=> (def ex (com.example.Demo.))
-#'user/ex
-user=> (.getLocation ex)
-"default"
-user=> (.setLocation ex "time")
-nil
-user=> (.getLocation ex)
-"time"
+(def ex (com.example.Demo.))
+;; => #'user/ex
+
+(.getLocation ex)
+;; => "default"
+
+(.setLocation ex "time")
+;; => nil
+
+(.getLocation ex)
+;; => "time"
