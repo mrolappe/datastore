@@ -4,27 +4,34 @@
 ;; make a copy of the array, call vec on the new array, and then lose all
 ;; references to the copy so it cannot be accessed in any way.
 
-user=> (def a (to-array (repeat 4 0)))
-#'user/a
-user=> (seq a)
-(0 0 0 0)
-user=> (def v (vec a))
-#'user/v
-user=> v
-[0 0 0 0]
+(def a (to-array (repeat 4 0)))
+;; => #'user/a
+
+(seq a)
+;; => (0 0 0 0)
+
+(def v (vec a))
+;; => #'user/v
+
+v
+;; => [0 0 0 0]
 
 ;; Now change a, and v changes, too, since they share state.
-user=> (aset a 2 -5)
--5
-user=> v
+(aset a 2 -5)
+;; => -5
+
+v
 [0 0 -5 0]
 
 ;; One way to avoid this
-user=> (def v (vec (aclone a)))
-#'user/v
-user=> v
-[0 0 -5 0]
-user=> (aset a 2 -20)
--20
-user=> v
-[0 0 -5 0]
+(def v (vec (aclone a)))
+;; => #'user/v
+
+v
+;; => [0 0 -5 0]
+
+(aset a 2 -20)
+;; => -20
+
+v
+;; => [0 0 -5 0]
