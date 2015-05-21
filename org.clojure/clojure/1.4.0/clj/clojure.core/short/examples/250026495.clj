@@ -1,2 +1,2 @@
-user=> (class (short 1))
-java.lang.Short
+(class (short 1))
+;; => java.lang.Short
