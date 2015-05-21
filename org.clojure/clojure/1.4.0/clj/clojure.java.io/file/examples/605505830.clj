@@ -1,8 +1,10 @@
-user> (clojure.java.io/file "/tmp/foo")
-#<File /tmp/foo>
+(require '[clojure.java.io :refer [file]])
 
-user> (clojure.java.io/file "http://asdf.com")
-#<File http:/asdf.com>
+(clojure.java.io/file "/tmp/foo")
+;; => #<File /tmp/foo>
 
-user> (clojure.java.io/file "/tmp/foo" "bar")
-#<File /tmp/foo/bar>
+(clojure.java.io/file "http://asdf.com")
+;; => #<File http:/asdf.com>
+
+(clojure.java.io/file "/tmp/foo" "bar")
+;; => #<File /tmp/foo/bar>
