@@ -3,8 +3,11 @@
 ;; string, or array can be truncated to 32-bit ints that are in range
 ;; after removing their most significant bits.
 
-user=> (def long-truncates-to-int-0 (bit-shift-left 1 33))
-user=> (get "abc" long-truncates-to-int-0)
-\a
-user=> (get [:a :b :c] long-truncates-to-int-0)
-:a
+(def long-truncates-to-int-0 (bit-shift-left 1 33))
+;; => #'user/long-truncates-to-int-0
+
+(get "abc" long-truncates-to-int-0)
+;; => \a
+
+(get [:a :b :c] long-truncates-to-int-0)
+;; => :a
