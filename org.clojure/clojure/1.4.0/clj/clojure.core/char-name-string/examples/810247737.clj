@@ -1,2 +1,2 @@
-user=> (char-name-string \newline)
-"newline"
+(char-name-string \newline)
+;; => "newline"
