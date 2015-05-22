@@ -1,5 +1,5 @@
 ;; convert a string representing a sequence,
-                                        ;to the sequence that the string represents
+;; to the sequence that the string represents
 (read-string "(\\( \\x \\y \\) \\z)")
 ;; => (\( \x \y \) \z)
 
