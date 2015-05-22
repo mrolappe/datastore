@@ -1,11 +1,11 @@
-user=> (empty [1 2 3])
-[]
+(empty [1 2 3])
+;; => []
 
-user=> (empty (list 1 2 3))
-()
+(empty (list 1 2 3))
+;; => ()
 
-user=> (map empty [[\a \b] {1 2} (range 4)])
-([] {} ())
+(map empty [[\a \b] {1 2} (range 4)])
+;; => ([] {} ())
 
-user=> (swap! (atom (range 10)) empty)      
-()
+(swap! (atom (range 10)) empty)      
+;; => ()
