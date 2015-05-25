@@ -3,16 +3,16 @@
 (def ba (atom (long 0)))
 
 (defn set-ba 
-"sets bit n in long atom ba"
+  "sets bit n in long atom ba"
   [n]
   (let [number-set (bit-shift-left 1 n)
-	_ (println "number to set: " number-set)
-	new-array (bit-or @ba number-set)]
+	_          (println "number to set: " number-set)
+	new-array  (bit-or @ba number-set)]
     (reset! ba new-array)))
 
 (defn get-ba 
-"gets bit n in long atom ba"
-[n]
+  "gets bit n in long atom ba"
+  [n]
   (not (zero? (bit-and (bit-shift-left 1 n) @ba))))
 
 (comment
