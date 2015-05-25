@@ -1,19 +1,15 @@
 (map inc [1 2 3 4 5])
 ;; => (2 3 4 5 6)
 
-
 ;; map can be used with multiple collections. Collections will be consumed
 ;; and passed to the mapping function in parallel:
 (map + [1 2 3] [4 5 6])
 ;; => (5 7 9)
 
-
 ;; When map is passed more than one collection, the mapping function will
 ;; be applied until one of the collections runs out:
 (map + [1 2 3] (iterate inc 1))
 ;; => (2 4 6)
-
-
 
 ;; map is often used in conjunction with the # reader macro:
 (map #(str "Hello " % "!" ) ["Ford" "Arthur" "Tricia"])
@@ -21,7 +17,7 @@
 
 ;; A useful idiom to pull "columns" out of a collection of collections. 
 ;; Note, it is equivalent to:
-;; user=> (map vector [:a :b :c] [:d :e :f] [:g :h :i])
+;; (map vector [:a :b :c] [:d :e :f] [:g :h :i])
 
 (apply map vector [[:a :b :c]
                    [:d :e :f]
