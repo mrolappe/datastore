@@ -1,2 +1,2 @@
-user=> (rest nil)
-()
+(rest nil)
+;; => ()
