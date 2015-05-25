@@ -17,5 +17,5 @@
 
 (def *configuration-options* (deserialize "config.clj"))
 
-user=> *configuration-options*
-{:name "Fred", :age "23"}
+*configuration-options*
+;; => {:name "Fred", :age "23"}
