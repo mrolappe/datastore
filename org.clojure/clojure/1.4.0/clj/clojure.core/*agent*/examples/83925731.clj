@@ -16,12 +16,12 @@
   (inc agent-value))
 
 ;; Dereference myagent to confirm it is set to value 0:
-user=> @myagent
-0
+@myagent
+;; => 0
 
 ;; Start the fun:
-user=> (send-off myagent inc-while-running)
-#<Agent@5fb9f88b: 20>;
+(send-off myagent inc-while-running)
+;; => #<Agent@5fb9f88b: 20>;
 
 ;; The agent has already been incremented many times (20 when I ran this)
 ;; by the time the REPL prints.
@@ -30,9 +30,9 @@ user=> (send-off myagent inc-while-running)
 (def running false)
 
 ;; Dereference myagent to find its new value:
-user=> @myagent
-848167
+@myagent
+;; => 848167
 
 ;; Dereference again to make sure incrementation has stopped:
-user=> @myagent
-848167
+@myagent
+;; => 848167
