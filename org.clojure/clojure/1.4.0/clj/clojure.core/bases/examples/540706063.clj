@@ -1,4 +1,5 @@
-user=> (import 'java.io.File)
+(import 'java.io.File)
+;; => java.io.File
 
-user=> (bases java.io.File)
-(java.lang.Object java.io.Serializable java.lang.Comparable)
+(bases java.io.File)
+;; => (java.lang.Object java.io.Serializable java.lang.Comparable)
