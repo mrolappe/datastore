@@ -1,3 +1,3 @@
-user=> (read-line)
+(read-line)
 line to be read      ;Type text into console
-"line to be read"
+;; => "line to be read"
