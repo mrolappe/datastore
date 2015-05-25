@@ -15,5 +15,8 @@
     (read r)))
 ;; => #'user/deserialize
 
+(serialize {:name "Fred" :age "23"} "config.clj")
+;; => nil
+
 (deserialize "config.clj")
 ;; => {:name "Fred", :age "23"}
