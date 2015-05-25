@@ -1,5 +1,5 @@
-user=> (even? 2)
-true
+(even? 2)
+;; => true
 
-user=> (even? 1)
-false
+(even? 1)
+;; => false
