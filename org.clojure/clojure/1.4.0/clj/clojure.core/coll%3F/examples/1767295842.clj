@@ -1,23 +1,23 @@
-user=> (coll? {})
-true
+(coll? {})
+;; => true
 
-user=> (coll? #{})
-true
+(coll? #{})
+;; => true
 
-user=> (coll? [])
-true
+(coll? [])
+;; => true
 
-user=> (coll? ())
-true
+(coll? ())
+;; => true
 
-user=> (coll? 4)
-false
+(coll? 4)
+;; => false
 
-user=> (coll? "fred")
-false
+(coll? "fred")
+;; => false
 
-user=> (coll? true)
-false
+(coll? true)
+;; => false
 
-user=> (coll? nil)
-false
+(coll? nil)
+;; => false
