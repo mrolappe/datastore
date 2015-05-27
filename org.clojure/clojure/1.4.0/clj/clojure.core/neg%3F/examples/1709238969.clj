@@ -1,6 +1,8 @@
-user=> (neg? -1)
-true
-user=> (neg? 0)
-false
-user=> (neg? 1)
-false
+(neg? -1)
+;; => true
+
+(neg? 0)
+;; => false
+
+(neg? 1)
+;; => false
