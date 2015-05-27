@@ -2,6 +2,13 @@
 user=> (def foo (map println [1 2 3]))
 #'user/foo
 
+;; Get the value of foo
+user=> foo
+1
+2
+3
+(nil nil nil)
+
 ;; doall forces the seq to be realized
 user=> (def foo (doall (map println [1 2 3])))
 1
@@ -9,7 +16,11 @@ user=> (def foo (doall (map println [1 2 3])))
 3
 #'user/foo
 
-;; where
+;; Like above, but note the difference
+user=> foo
+(nil nil nil)
+
+;; Where
 (doall (map println [1 2 3]))
 1
 2
