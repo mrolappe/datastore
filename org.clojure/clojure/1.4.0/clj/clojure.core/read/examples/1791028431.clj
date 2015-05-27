@@ -23,8 +23,8 @@
 ;; could cause your application to execute arbitrary code while it is
 ;; reading.  Example:
 
-user=> (read-string "#=(clojure.java.shell/sh \"echo\" \"hi\")")
-{:exit 0, :out "hi\n", :err ""}
+(read-string "#=(clojure.java.shell/sh \"echo\" \"hi\")")
+;; => {:exit 0, :out "hi\n", :err ""}
 
 ;; It is straightforward to modify the example above into more
 ;; destructive ones that remove all of your files, copy them to
@@ -83,7 +83,8 @@ user=> (read-string "#=(clojure.java.shell/sh \"echo\" \"hi\")")
     (binding [*read-eval* false]
       (read r))))
 
-user=> (spit "testfile.txt" "{:a 1 :b 2 :c 3}")
-nil
-user=> (read-from-file-with-trusted-contents "testfile.txt")
-{:a 1, :b 2, :c 3}
+(spit "testfile.txt" "{:a 1 :b 2 :c 3}")
+;; => nil
+
+(read-from-file-with-trusted-contents "testfile.txt")
+;; => {:a 1, :b 2, :c 3}
