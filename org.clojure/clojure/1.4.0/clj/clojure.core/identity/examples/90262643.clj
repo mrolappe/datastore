@@ -1,2 +1,2 @@
-user=> (identity 4)
-4
+(identity 4)
+;; => 4
