@@ -1,2 +1,2 @@
-user=> (empty? nil)
-true
+(empty? nil)
+;; => true
