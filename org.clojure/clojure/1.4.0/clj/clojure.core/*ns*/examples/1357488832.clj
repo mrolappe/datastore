@@ -1,5 +1,5 @@
-user=> (ns foo.bar)
-nil
+(ns foo.bar)
+;; => nil
 
-foo.bar=> *ns*
-#<Namespace foo.bar>
+*ns*
+;; => #<Namespace foo.bar>
