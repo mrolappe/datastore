@@ -1,6 +1,6 @@
-user=> (unchecked-dec 4)
+;; => (unchecked-dec 4)
 3
 
-user=> (unchecked-dec Integer/MIN_VALUE)
+;; => (unchecked-dec Integer/MIN_VALUE)
 2147483647
 
