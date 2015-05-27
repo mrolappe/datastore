@@ -1,5 +1,5 @@
-user=> (refer 'clojure.string :only '[capitalize trim])
-nil
+(refer 'clojure.string :only '[capitalize trim])
+;; => nil
 
-user=> (capitalize (trim " hOnduRAS  "))
-"Honduras"
+(capitalize (trim " hOnduRAS  "))
+;; => "Honduras"
