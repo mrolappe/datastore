@@ -1,3 +1,2 @@
-
-user=> (drop-while empty? ["" [] "foobar"])
-("foobar")
+(drop-while empty? ["" [] "foobar"])
+;; => ("foobar")
