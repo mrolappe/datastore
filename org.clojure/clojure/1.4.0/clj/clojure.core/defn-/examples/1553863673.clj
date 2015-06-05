@@ -1,24 +1,26 @@
 
-user=> (ns test)
-nil
+(ns test)
+;; => nil
 
-test=> (defn- foo []
-         "World!")
-#'test/foo
+(defn- foo []
+  "World!")
+;; => #'test/foo
 
-test=> (defn bar []
-       (str "Hello " (foo)))
-#'test/bar
+(defn bar []
+  (str "Hello " (foo)))
+;; => #'test/bar
 
-test=> (foo)
-"World!"
-test=> (bar)
-"Hello World!"
-test=> (ns playground)
-nil
-playground=> (test/bar)
-"Hello World!"
+(foo)
+;; => "World!"
 
-;; Error will be thrown
-;; var: #'test/foo is not public
-playground=> (test/foo)
+(bar)
+;; => "Hello World!"
+
+(ns playground)
+;; => nil
+
+(test/bar)
+;; => "Hello World!"
+
+(test/foo)
+;; => Error: var: #'test/foo is not public
