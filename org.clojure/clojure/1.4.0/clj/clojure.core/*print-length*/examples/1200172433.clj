@@ -1,7 +1,7 @@
 ;; Oops! Don't this!!!
 (iterate inc 0)
 ;; Frantically doing C-c C-c :-P
-                                        ; Evaluation aborted.
+;; Evaluation aborted.
 
 (set! *print-length* 10)
 ;; => 10
