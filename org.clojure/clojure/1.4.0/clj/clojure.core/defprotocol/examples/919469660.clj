@@ -27,18 +27,18 @@
   (foo [s] (str "foo-B-" (.toLowerCase s))))
 
 
-user=> (require '[abstraction-a :as a])
+(require '[abstraction-a :as a])
 
-user=> (require '[abstraction-b :as b])
+(require '[abstraction-b :as b])
 
-user=> (a/foo "Bar")
-"foo-A-BAR"
+(a/foo "Bar")
+;; => "foo-A-BAR"
 
-user=> (b/foo "Bar")
-"foo-B-bar"
+(b/foo "Bar")
+;; => "foo-B-bar"
 
-user=> (a/foo nil)
-"foo-A!"
+(a/foo nil)
+;; => "foo-A!"
 
-user=> (b/foo nil)
-"foo-B!"
+(b/foo nil)
+;; => "foo-B!"
