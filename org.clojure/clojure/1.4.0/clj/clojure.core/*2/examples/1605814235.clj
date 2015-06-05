@@ -1,8 +1,8 @@
-user=> "Hello!"
 "Hello!"
+;; => "Hello!"
 
-user=> "Hello World!"
 "Hello World!"
+;; => "Hello World!"
 
-user=> [*1 *2]
-["Hello World!" "Hello!"]
+[*1 *2]
+;; => ["Hello World!" "Hello!"]
