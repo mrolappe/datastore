@@ -1,4 +1,3 @@
-
 (ns test)
 ;; => nil
 
