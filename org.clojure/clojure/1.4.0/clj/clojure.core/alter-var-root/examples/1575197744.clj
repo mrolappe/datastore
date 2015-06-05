@@ -1,6 +1,7 @@
 (defn sqr [n] 
   "Squares a number"
   (* n n))
+;; => #'user/sqr
 
 (sqr 5)
 ;; => 25
