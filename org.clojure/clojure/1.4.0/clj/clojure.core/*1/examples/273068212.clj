@@ -1,5 +1,5 @@
-user=> "Hello!"
 "Hello!"
+;; => "Hello!"
 
-user=> *1
-"Hello!"
+*1
+;; => "Hello!"
