@@ -11,5 +11,4 @@
 (assoc-in users [2] {:name "Jack" :age 19})  
 ;; => [{:name "James", :age 26} {:name "John", :age 43} {:name "Jack", :age 19}]
 
-
 ;; From http://clojure-examples.appspot.com/clojure.core/assoc-in
