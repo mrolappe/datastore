@@ -1,10 +1,14 @@
-user=> (associative? [1 2 3]) ; vector
-true
-user=> (associative? '(1 2 3)) ; list
-false
-user=> (associative? {:a 1 :b 2}) ; map
-true
-user=> (associative? #{:a :b :c}) ; set
-false
-user=> (associative? "fred") ; string
-false
+(associative? [1 2 3]) ; vector
+;; => true
+
+(associative? '(1 2 3)) ; list
+;; => false
+
+(associative? {:a 1 :b 2}) ; map
+;; => true
+
+(associative? #{:a :b :c}) ; set
+;; => false
+
+(associative? "fred") ; string
+;; => false
