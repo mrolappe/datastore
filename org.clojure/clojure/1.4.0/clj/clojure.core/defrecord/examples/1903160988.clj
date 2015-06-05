@@ -3,7 +3,10 @@
 ;; => Fun-Time
 
 ;; define a record and extend the previous protocol, implementing its function
-(defrecord Someone [nick-name preffered-drink] Fun-Time (drinky-drinky [_] (str nick-name "(having " preffered-drink "): uuumm")))
+(defrecord Someone [nick-name preffered-drink]
+  Fun-Time
+  (drinky-drinky [_]
+    (str nick-name "(having " preffered-drink "): uuumm")))
 ;; => user.Someone
 
 ;; NOTE how 'nick-name' and 'preffered-drink' are symbols that are not declared anywhere, they are 'provided' inside the function
