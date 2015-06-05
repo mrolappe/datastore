@@ -1,14 +1,14 @@
-user=> (decimal? 1)
-false
+(decimal? 1)
+;; => false
 
-user=> (decimal? 1.0)
-false
+(decimal? 1.0)
+;; => false
 
-user=> (decimal? 1M)
-true
+(decimal? 1M)
+;; => true
 
-user=> (decimal? 99999999999999999999999999999999999)
-false
+(decimal? 99999999999999999999999999999999999)
+;; => false
 
-user=> (decimal? 1.0M)
-true
+(decimal? 1.0M)
+;; => true
