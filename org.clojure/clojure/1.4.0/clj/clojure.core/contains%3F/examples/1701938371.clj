@@ -1,8 +1,9 @@
 ;; Can be used to test set membership
-user=> (def s #{"a" "b" "c"})
+(def s #{"a" "b" "c"})
+;; => #'user/s
 
-user=> (contains? s "a")
-true
+(contains? s "a")
+;; => true
 
-user=> (contains? s "z")
-false
+(contains? s "z")
+;; => false
