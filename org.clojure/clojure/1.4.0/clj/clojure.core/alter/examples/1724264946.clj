@@ -20,11 +20,14 @@
 
 ;; Notice that the var 'names' points to the reference that we created
 (println names)
-;; => #<Ref@658ba380: [zack shelley]>
+;; > #<Ref@658ba380: [zack shelley]>
+;; => nil
 
 ;; To get the actual value of the ref, you use the '@' symbol, or deref
 (println @names)
-;; => [zack shelley]
+;; > [zack shelley]
+;; => nil
 
 (println (deref names))
-;; => [zack shelley]
+;; > [zack shelley]
+;; => nil
