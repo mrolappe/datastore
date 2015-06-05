@@ -1,4 +1,5 @@
-user=> (distinct? 1 2 3)
-true
-user=> (distinct? 1 2 3 3)
-false
+(distinct? 1 2 3)
+;; => true
+
+(distinct? 1 2 3 3)
+;; => false
