@@ -1,2 +1,2 @@
-user=> (double 1)
-1.0
+(double 1)
+;; => 1.0
