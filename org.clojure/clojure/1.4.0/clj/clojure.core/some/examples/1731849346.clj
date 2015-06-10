@@ -1,4 +1,3 @@
-
 (some true? [false false false])
 ;; => nil
 
