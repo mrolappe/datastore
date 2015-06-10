@@ -1,2 +1,2 @@
-user=> (peek '(:a :b :c))
-:a
+(peek '(:a :b :c))
+;; => :a
