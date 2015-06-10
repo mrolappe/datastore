@@ -1,6 +1,8 @@
-user=> (nil? nil)
-true
-user=> (nil? 0)
-false
-user=> (nil? false)
-false
+(nil? nil)
+;; => true
+
+(nil? 0)
+;; => false
+
+(nil? false)
+;; => false
