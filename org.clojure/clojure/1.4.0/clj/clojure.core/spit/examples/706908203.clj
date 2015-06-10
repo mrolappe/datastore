@@ -1,4 +1,5 @@
-user=> (spit "flubber.txt" "test")
-nil
-user=> (slurp "flubber.txt")
-"test"
+(spit "flubber.txt" "test")
+;; => nil
+
+(slurp "flubber.txt")
+;; => "test"
