@@ -1,6 +1,8 @@
-user=> (reversible? [])
-true
-user=> (reversible? '())
-false
-user=> (reversible? #{})
-false
+(reversible? [])
+;; => true
+
+(reversible? '())
+;; => false
+
+(reversible? #{})
+;; => false
