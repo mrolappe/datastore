@@ -1,25 +1,27 @@
 ;; You can define namespaced keywords using '::'
-user=> (def a :foo)
-#'user/a
+(def a :foo)
+;; => #'user/a
 
-user=> (def b ::foo)
-#'user/b
+(def b ::foo)
+;; => #'user/b
 
-user=> (ns foo)
-foo=> user/a
-:foo
+(ns foo)
+;; => Namespace foo
 
-foo=> user/b
-:user/foo
+user/a
+;; => :foo
 
-foo=> ::foo
-:foo/foo
+user/b
+;; => :user/foo
 
-foo=> (= user/a :foo)
-true
+::foo
+;; => :foo/foo
 
-foo=> (= user/b ::foo)
-false
+(= user/a :foo)
+;; => true
 
-foo=> (= user/b :user/foo)
-true
+(= user/b ::foo)
+;; => false
+
+(= user/b :user/foo)
+;; => true
