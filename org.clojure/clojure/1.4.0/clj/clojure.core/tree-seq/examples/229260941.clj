@@ -7,6 +7,5 @@
 ;;  / \  |
 ;; D   E F
 ;;
-user=> (map first (tree-seq next rest '(:A (:B (:D) (:E)) (:C (:F)))))
-
-(:A :B :D :E :C :F)
+(map first (tree-seq next rest '(:A (:B (:D) (:E)) (:C (:F)))))
+;; => (:A :B :D :E :C :F)
