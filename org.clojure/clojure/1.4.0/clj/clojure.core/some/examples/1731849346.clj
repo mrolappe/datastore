@@ -1,7 +1,8 @@
+(some true? [false false false])
+;; => nil
 
-user=> (some true? [false false false])
-nil
-user=> (some true? [false true false])
-true
-user=> (some true? [true true true])
-true
+(some true? [false true false])
+;; => true
+
+(some true? [true true true])
+;; => true

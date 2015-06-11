@@ -1,2 +1,2 @@
-=> (sorted? (sort [1 2]))
-false
+(sorted? (sort [1 2]))
+;; => false

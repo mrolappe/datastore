@@ -1,11 +1,12 @@
-user=> (def f (future (Thread/sleep 5000) (inc 0)))
+(def f (future (Thread/sleep 5000) (inc 0)))
+;; => #'user/f
 
-user=> (future-done? f)                            
-false
+(future-done? f)                            
+;; => false
 
-user=> (Thread/sleep 5000)
-nil
+(Thread/sleep 5000)
+;; => nil
 
-user=> (future-done? f)
-true
+(future-done? f)
+;; => true
 

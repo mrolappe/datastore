@@ -1,10 +1,14 @@
-user=> (number? 1)
-true
-user=> (number? 1.0)
-true
-user=> (number? :a)
-false
-user=> (number? nil)
-false
-user=> (number? "23")
-false
+(number? 1)
+;; => true
+
+(number? 1.0)
+;; => true
+
+(number? :a)
+;; => false
+
+(number? nil)
+;; => false
+
+(number? "23")
+;; => false

@@ -1,2 +1,5 @@
-user> (reverse "foo")
-"oof"
+(require '[clojure.string :refer [reverse]])
+;; => nil
+
+(reverse "foo")
+;; => "oof"

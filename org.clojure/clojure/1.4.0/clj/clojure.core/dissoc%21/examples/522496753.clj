@@ -12,5 +12,5 @@
 ;; Here is a correct way to do the operation described above:
 
 (let [my-map (transient {:x 1 :y 2 :z 3})
-      x (dissoc! my-map :x)]    ; after this, don't use my-map again, only x
+      x      (dissoc! my-map :x)]    ; after this, don't use my-map again, only x
   (persistent! x))    ; returns persistent map {:y 2 :z 3}

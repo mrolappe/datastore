@@ -2,31 +2,31 @@
 ;; implement IPersistentCollection. The atom referred 
 ;; here is not the atom used in managing mutable state  
 
-user=> (use `[clojure.inspector :include (atom?)])
+(require '[clojure.inspector :refer (atom?)])
 
-user=> (atom? 1)
-true
+(atom? 1)
+;; => true
 
-user=> (atom? \a)
-true
+(atom? \a)
+;; => true
 
-user=> (atom? "hello world")
-true
+(atom? "hello world")
+;; => true
 
-user=> (atom? :keyword)
-true
+(atom? :keyword)
+;; => true
 
-user=> (atom? nil)
-true
+(atom? nil)
+;; => true
 
-user=> (atom? '())
-false
+(atom? '())
+;; => false
 
-user=> (atom? [1, 3, 5])
-false
+(atom? [1, 3, 5])
+;; => false
 
-user=> (atom? #{\a \e \i \o \u})
-false
+(atom? #{\a \e \i \o \u})
+;; => false
 
-user=> (atom? {:x 16 :y 25})
-false
+(atom? {:x 16 :y 25})
+;; => false

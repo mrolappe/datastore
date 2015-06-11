@@ -1,8 +1,8 @@
-user=> (name :x)
-"x"
+(name :x)
+;; => "x"
 
-user=> (name "x")
-"x"
+(name "x")
+;; => "x"
 
-user=> (name 'x)
-"x"
+(name 'x)
+;; => "x"

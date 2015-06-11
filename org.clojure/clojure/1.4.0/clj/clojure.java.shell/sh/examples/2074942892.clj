@@ -1,14 +1,15 @@
-user=> (use '[clojure.java.shell :only [sh]])
+(require '[clojure.java.shell :refer [sh]])
+;; => nil
 
-user=> (println (:out (sh "cowsay" "Printing a command-line output")))
-
- _________________________________ 
-< Printing a command-line output. >
- --------------------------------- 
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-
-nil
+(println (:out (sh "cowsay" "Printing a command-line output")))
+;; > 
+;; >  _________________________________ 
+;; > < Printing a command-line output. >
+;; >  --------------------------------- 
+;; >         \   ^__^
+;; >          \  (oo)\_______
+;; >             (__)\       )\/\
+;; >                 ||----w |
+;; >                 ||     ||
+;; > 
+;; => nil

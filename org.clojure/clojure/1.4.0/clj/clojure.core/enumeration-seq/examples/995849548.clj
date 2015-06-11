@@ -1,2 +1,2 @@
-user=> (enumeration-seq (java.util.StringTokenizer. "exciting example"))
-("exciting" "example")
+(enumeration-seq (java.util.StringTokenizer. "exciting example"))
+;; => ("exciting" "example")

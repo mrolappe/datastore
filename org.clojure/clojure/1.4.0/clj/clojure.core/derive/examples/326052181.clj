@@ -1,11 +1,11 @@
-user=> (derive ::Cat ::Feline)
-nil
+(derive ::Cat ::Feline)
+;; => nil
 
-user=> (derive ::Lion ::Feline)
-nil
+(derive ::Lion ::Feline)
+;; => nil
 
-user=> (isa? ::Lion ::Feline)
-true
+(isa? ::Lion ::Feline)
+;; => true
 
-user=> (isa? ::Tuna ::Feline)
-false
+(isa? ::Tuna ::Feline)
+;; => false

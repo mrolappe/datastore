@@ -1,12 +1,17 @@
-user=> (def x 1)
-#'user/x
-user=> (identical? x x)
-true
-user=> (identical? x 1)
-true
-user=> (identical? x 2)
-false
-user=> (identical? x ((constantly 1) 8))
-true
-user=> (identical? 'a 'a)
-false
+(def x 1)
+;; => #'user/x
+
+(identical? x x)
+;; => true
+
+(identical? x 1)
+;; => true
+
+(identical? x 2)
+;; => false
+
+(identical? x ((constantly 1) 8))
+;; => true
+
+(identical? 'a 'a)
+;; => false

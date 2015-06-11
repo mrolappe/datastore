@@ -6,9 +6,11 @@
     (> n 0) "positive"
     :else "zero"))
 
-user=> (pos-neg-or-zero 5)
-"positive"
-user=> (pos-neg-or-zero -1)
-"negative"
-user=> (pos-neg-or-zero 0)
-"zero"
+(pos-neg-or-zero 5)
+;; => "positive"
+
+(pos-neg-or-zero -1)
+;; => "negative"
+
+(pos-neg-or-zero 0)
+;; => "zero"

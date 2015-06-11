@@ -1,8 +1,11 @@
-user=> (reduce + [1 2 3 4 5])
-15
-user=> (reduce + [])
-0
-user=> (reduce + 1 [])
-1
-user=> (reduce + 1 [2 3])
-6
+(reduce + [1 2 3 4 5])
+;; => 15
+
+(reduce + [])
+;; => 0
+
+(reduce + 1 [])
+;; => 1
+
+(reduce + 1 [2 3])
+;; => 6

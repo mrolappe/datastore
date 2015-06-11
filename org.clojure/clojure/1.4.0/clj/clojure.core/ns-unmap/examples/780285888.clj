@@ -1,14 +1,14 @@
-user=> (def foo 1)
-#'user/foo
+(def foo 1)
+;; => #'user/foo
 
-user=> foo
-1
+foo
+;; => 1
 
-user=> (ns-unmap 'user 'foo) ; explicit
-nil
+(ns-unmap 'user 'foo) ; explicit
+;; => nil
 
-user=> (ns-unmap *ns* 'foo) ; convenient
-nil
+(ns-unmap *ns* 'foo) ; convenient
+;; => nil
 
-user=> foo
-"Unable to resolve symbol: foo in this context"
+foo
+;; => "Unable to resolve symbol: foo in this context"

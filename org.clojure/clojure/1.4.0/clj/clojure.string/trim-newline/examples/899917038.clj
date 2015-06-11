@@ -1,3 +1,5 @@
+(require '[clojure.string :refer [trim-newline]])
+;; => nil
 
-user=> (clojure.string/trim-newline "test\n\r")
-"test"
+(clojure.string/trim-newline "test\n\r")
+;; => "test"

@@ -7,7 +7,8 @@
   (when-let [s (seq coll)]
     (rest s)))
 
-user=> (drop-one [1 2 3])
-(2 3)
-user=> (drop-one [])
-nil
+(drop-one [1 2 3])
+;; => (2 3)
+
+(drop-one [])
+;; => nil

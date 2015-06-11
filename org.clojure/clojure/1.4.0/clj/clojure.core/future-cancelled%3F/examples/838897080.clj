@@ -1,14 +1,14 @@
-user=> (def f (future (inc 0)))                    
-#'user/f
+(def f (future (inc 0)))
+;; => #'user/f
 
-user=> (future-cancel f)       
-false
+(future-cancel f)
+;; => false
 
-user=> (future-cancelled? f)
-false
+(future-cancelled? f)
+;; => false
 
-user=> (future-done? f)        
-true
+(future-done? f)
+;; => true
 
-user=> @f                                          
-1
+@f
+;; => 1

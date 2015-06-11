@@ -1,3 +1,4 @@
+(require '[clojure.string :refer [upper-case]])
 ;; Non-character symbols will be returned back
-user=> (clojure.string/upper-case ",.!@#$%^&*()")
-",.!@#$%^&*()"
+(upper-case ",.!@#$%^&*()")
+;; => ",.!@#$%^&*()"

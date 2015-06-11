@@ -1,3 +1,6 @@
 ;; same as println, but without a newline
-user> (print "foo") (print "foo")
-foofoo
+(do (print "foo")
+    (print "foo")
+    nil)
+;; > foofoo
+;; => nil

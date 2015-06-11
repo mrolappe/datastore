@@ -5,5 +5,6 @@
       (.write w "I am being written to a file."))))
 
 
-user=> (time (time-test))
-"Elapsed time: 19.596371 msecs"
+(time (time-test))
+;; > "Elapsed time: 19.596371 msecs"
+;; => nil

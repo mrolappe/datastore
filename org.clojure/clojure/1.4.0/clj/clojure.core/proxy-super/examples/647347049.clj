@@ -5,20 +5,17 @@
              (println "Adding some stuff:" x)
              (proxy-super add x))))
 
-user=> (.add lst 1)
-Adding some stuff: 1
-true
+(.add lst 1)
+;; > Adding some stuff: 1
+;; => true
 
-user=> (.add lst 2)
-Adding some stuff: 2
-true
+(.add lst 2)
+;; > Adding some stuff: 2
+;; => true
 
-user=> (.add lst [:this :is :some :other :stuff])
-Adding some stuff: [:this :is :some :other :stuff]
-true
+(.add lst [:this :is :some :other :stuff])
+;; > Adding some stuff: [:this :is :some :other :stuff]
+;; => true
 
-user=> (.size lst)
-3
-
-
- 
+(.size lst)
+;; => 3

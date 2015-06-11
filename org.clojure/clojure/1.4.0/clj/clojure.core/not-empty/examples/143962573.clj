@@ -1,6 +1,8 @@
-user=> (not-empty [])
-nil
-user=> (not-empty [1])
-[1]
-user=> (not-empty [1 3 5])
-[1 3 5]
+(not-empty [])
+;; => nil
+
+(not-empty [1])
+;; => [1]
+
+(not-empty [1 3 5])
+;; => [1 3 5]

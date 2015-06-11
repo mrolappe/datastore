@@ -4,6 +4,6 @@
 
 (def make (accessor car-struct :make))
 
-user=> (make car)  ; Same as both (car :make) and (:make car)
-"Toyota"           
+(make car)  ; Same as both (car :make) and (:make car)
+;; => "Toyota"           
 

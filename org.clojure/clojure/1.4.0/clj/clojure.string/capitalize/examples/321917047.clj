@@ -1,8 +1,8 @@
-user=> (require 'clojure.string)
-nil
+(require '[clojure.string :refer [capitalize]])
+;; => nil
 
-user=> (clojure.string/capitalize "MiXeD cAsE")
-"Mixed case"
+(capitalize "MiXeD cAsE")
+;; => "Mixed case"
 
-user=> (clojure.string/capitalize "mIxEd CaSe")
-"Mixed case"
+(capitalize "mIxEd CaSe")
+;; => "Mixed case"

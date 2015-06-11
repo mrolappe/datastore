@@ -6,6 +6,7 @@
   (cons (first s)
         (lazy-seq (sieve (filter #(not= 0 (mod % (first s)))
                                  (rest s))))))
+;; => #'user/sieve
 
-user=> (take 20 (sieve (iterate inc 2)))
-(2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71)
+(take 20 (sieve (iterate inc 2)))
+;; => (2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71)

@@ -1,3 +1,2 @@
-
-user=> (rationalize 1.5)
-3/2
+(rationalize 1.5)
+;; => 3/2

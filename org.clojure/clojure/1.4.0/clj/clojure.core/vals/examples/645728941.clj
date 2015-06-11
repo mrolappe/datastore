@@ -1,2 +1,2 @@
-user=> (vals {:a "foo", :b "bar"})
-("foo" "bar")
+(vals {:a "foo", :b "bar"})
+;; => ("foo" "bar")

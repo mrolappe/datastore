@@ -1,11 +1,9 @@
-user=> (num 2048)
-2048
-
+(num 2048)
+;; => 2048
 
 ;; Calling a Number http://download.oracle.com/javase/6/docs/api/ method:
+(def x (num 2048))
+;; => #'user/x
 
-user=> (def x (num 2048))
-#'user/x
-
-user=> (.floatValue x)
-2048.0
+(.floatValue x)
+;; => 2048.0

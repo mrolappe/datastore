@@ -26,5 +26,5 @@
   (colour-map
    (apply min-key (partial distance-squared rgb-triple) (keys colour-map))))
 
-user=> (rgb-to-key-colour [255 0 0] key-colours)
-:red
+(rgb-to-key-colour [255 0 0] key-colours)
+;; => :red

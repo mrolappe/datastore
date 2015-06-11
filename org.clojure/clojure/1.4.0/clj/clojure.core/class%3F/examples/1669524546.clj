@@ -1,8 +1,8 @@
-user=> (class? 1)
-false
+(class? 1)
+;; => false
 
-user=> (class? java.lang.String)
-true
+(class? java.lang.String)
+;; => true
 
-user=> (class? [])
-false
+(class? [])
+;; => false

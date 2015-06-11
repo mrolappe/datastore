@@ -1,9 +1,8 @@
+(def f (future (Thread/sleep 5000) (inc 0)))
+;; => #'user/f
 
-user=> (def f (future (Thread/sleep 5000) (inc 0)))
-#'user/f
+(future-cancel f)                           
+;; => true
 
-user=> (future-cancel f)                           
-true
-
-user=> (future-cancelled? f)                       
-true
+(future-cancelled? f)                       
+;; => true

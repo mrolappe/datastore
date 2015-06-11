@@ -1,3 +1,5 @@
+(require '[clojure.string :refer [join]])
+;; => nil
 
-user=> (clojure.string/join ", " [1 2 3])
-"1, 2, 3"
+(join ", " [1 2 3])
+;; => "1, 2, 3"

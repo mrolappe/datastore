@@ -3,23 +3,32 @@
 ;; value and continuing to modify the original transient set.  See examples for
 ;; assoc! and dissoc! for more discussion and examples of this.
 
-user=> (def foo (transient #{'pore-pore 'slow 'yukkuri}))
-#'user/foo
-user=> (count foo)
-3
-user=> (def foo (disj! foo 'yukkuri))
-#'user/foo
-user=> foo
-#<TransientHashSet clojure.lang.PersistentHashSet$TransientHashSet@3bd840d9>
-user=> (count foo)
-2
-user=> (def foo (conj! foo 'yukkuri))
-#'user/foo
-user=> foo
-#<TransientHashSet clojure.lang.PersistentHashSet$TransientHashSet@3bd840d9>
-user=> (count foo)
-3
-user=> (def foo (persistent! foo))
-#'user/foo
-user=> foo
-#{yukkuri slow pore-pore}
+(def foo (transient #{'pore-pore 'slow 'yukkuri}))
+;; => #'user/foo
+
+(count foo)
+;; => 3
+
+(def foo (disj! foo 'yukkuri))
+;; => #'user/foo
+
+foo
+;; => #<TransientHashSet clojure.lang.PersistentHashSet$TransientHashSet@3bd840d9>
+
+(count foo)
+;; => 2
+
+(def foo (conj! foo 'yukkuri))
+;; => #'user/foo
+
+foo
+;; => #<TransientHashSet clojure.lang.PersistentHashSet$TransientHashSet@3bd840d9>
+
+(count foo)
+;; => 3
+
+(def foo (persistent! foo))
+;; => #'user/foo
+
+foo
+;;=> #{yukkuri slow pore-pore}

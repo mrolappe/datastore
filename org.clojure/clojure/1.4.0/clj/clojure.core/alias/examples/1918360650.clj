@@ -1,8 +1,8 @@
-user=> (require 'clojure.string)
-nil
+(require 'clojure.string)
+;; => nil
 
-user=> (alias 'string 'clojure.string)
-nil
+(alias 'string 'clojure.string)
+;; => nil
 
-user=> (string/capitalize "hONdURas")
-"Honduras"
+(string/capitalize "hONdURas")
+;; => "Honduras"

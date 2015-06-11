@@ -1,15 +1,14 @@
-user=> (def o (Object.))
+(def o (Object.))
 
-user=> (future (locking o 
-                 (Thread/sleep 10000) 
-                 (println "done")))
+(future (locking o 
+          (Thread/sleep 10000) 
+          (println "done")))
 
-;; Now run this again before 10 seconds is up and you'll 
-;; find the second instance prints done 10 seconds after the 
-;; first instance has released the lock
+(future (locking o 
+          (Thread/sleep 10000) 
+          (println "done")))
 
-user=> (future (locking o 
-                 (Thread/sleep 10000) 
-                 (println "done")))
-
-;; Operates like the synchronized keyword in Java.
+;; Operates like the synchronized keyword in Java. Because only one of the two
+;; threads can have the lock on o at once, and each takes 10s to sleep and print
+;; while holding the lock, this program will evaluate in 20s, printing "done" at
+;; two 10s intervals.

@@ -1,11 +1,11 @@
-user=> (char? \a)
-true
+(char? \a)
+;; => true
 
-user=> (char? 22)
-false
+(char? 22)
+;; => false
 
-user=> (char? "a")
-false
+(char? "a")
+;; => false
 
-user=> (char? (first "abc"))
-true
+(char? (first "abc"))
+;; => true

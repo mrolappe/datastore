@@ -1,14 +1,17 @@
 ;; simple example to create an ArrayList, initially [1,2,0]
 ;; and sort it in descending order
 
-user=> (def a (new java.util.ArrayList [1 2 0]))
-#'user/a
-user=> (def compx (comparator (fn [x y] (> x y))))
-#'user/compx
-user=> (java.util.Collections/sort a compx)
-nil
-user=> a
-#<ArrayList [2, 1, 0]>
+(def a (new java.util.ArrayList [1 2 0]))
+;; => #'user/a
+
+(def compx (comparator (fn [x y] (> x y))))
+;; => #'user/compx
+
+(java.util.Collections/sort a compx)
+;; => nil
+
+a
+;; => #<ArrayList [2, 1, 0]>
 
 ;; Note however that 'comparator' is rarely (never?) needed because if
 ;; the fn returns a boolean, the .compare implementation Clojure provides

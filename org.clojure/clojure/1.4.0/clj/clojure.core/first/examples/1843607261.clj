@@ -1,2 +1,2 @@
-user=> (first '(:alpha :bravo :charlie))
-:alpha
+(first '(:alpha :bravo :charlie))
+;; => :alpha

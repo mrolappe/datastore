@@ -1,4 +1,10 @@
 ;; give function another name
-user=> (def sys-map map)
+(def sys-map map)
+;; => #'user/sys-map
+
 ;; give macro another name
-user=> (def #^{:macro true} sys-loop #'loop)
+(def #^{:macro true} sys-loop #'loop)
+;; => #'user/sys-loop
+
+;; Note that if the ^{:macro true} metadata were not preserved, sys-loop would
+;; not be treated as a macro.

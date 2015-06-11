@@ -1,11 +1,14 @@
-user=> (defn foo []
-         (undefined-func))
-; Evaluation aborted. Unable to resolve symbol: undefined-func in this context
-nil
+(defn foo []
+  (undefined-func))
+;; Evaluation aborted. Unable to resolve symbol: undefined-func in this context
 
-user=> (declare undefined-func)
-#'user/undefined-func
+(declare undefined-func)
+;; => #'user/undefined-func
 
-user=> (defn foo []
-         (undefined-func))
-#'user/foo
+(defn foo []
+  (undefined-func))
+;; => #'user/foo
+
+;; Note that while foo can be defined thanks to the forward declaration in
+;; declare, it cannot be invoked until the forward declared var becomes bound by
+;; a def.

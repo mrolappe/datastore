@@ -12,11 +12,11 @@
 ;; improper symbols with undefined behavior for non-conformant ns and
 ;; name.
 
-user=> (symbol 'foo)
-foo
+(symbol 'foo)
+;; => foo
 
-user=> (symbol "foo")
-foo
+(symbol "foo")
+;; => foo
 
-user=> (symbol "clojure.core" "foo")
-clojure.core/foo
+(symbol "clojure.core" "foo")
+;; => clojure.core/foo

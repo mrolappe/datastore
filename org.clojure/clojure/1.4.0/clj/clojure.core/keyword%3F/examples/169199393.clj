@@ -1,6 +1,8 @@
-user=> (keyword? x)
-false
-user=> (keyword? :x)
-true
-user=> (keyword? true)
-false
+(keyword? x)
+;; => false
+
+(keyword? :x)
+;; => true
+
+(keyword? true)
+;; => false

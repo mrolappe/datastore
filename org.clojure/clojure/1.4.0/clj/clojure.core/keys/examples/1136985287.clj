@@ -1,3 +1,2 @@
-
-user=> (keys {:keys :and, :some :values})
-(:keys :some)
+(keys {:keys :and, :some :values})
+;; => (:keys :some)

@@ -1,2 +1,2 @@
-user=> (concat "abc" "def")
-(\a \b \c \d \e \f)
+(concat "abc" "def")
+;; => (\a \b \c \d \e \f)

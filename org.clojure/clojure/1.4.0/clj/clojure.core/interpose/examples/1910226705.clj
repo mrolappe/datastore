@@ -1,13 +1,16 @@
 ;; The quintessential interpose example:
-user> (def my-strings ["one" "two" "three"])
+(def my-strings ["one" "two" "three"])
+;; => #'user/my-strings
 
-user> (interpose ", " my-strings)
-=> ("one" ", " "two" ", " "three")
+(interpose ", " my-strings)
+;; => ("one" ", " "two" ", " "three")
 
-user> (apply str (interpose ", " my-strings))
-=> "one, two, three"
+(apply str (interpose ", " my-strings))
+;; => "one, two, three"
 
 ;; Might use clojure.string/join if the plan is to join
 (use '[clojure.string :only (join)])
-user> (join ", " my-strings)
-=> "one, two, three"
+;; => nil
+
+(join ", " my-strings)
+;; => "one, two, three"

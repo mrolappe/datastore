@@ -10,15 +10,15 @@
 ;; return improper keywords with undefined behavior for non-conformant
 ;; ns and name.
 
-user=> (keyword 'foo)
-:foo
+(keyword 'foo)
+;; => :foo
 
-user=> (keyword "foo")       
-:foo
+(keyword "foo")       
+;; => :foo
 
-user=> (keyword "user" "foo")
-:user/foo
+(keyword "user" "foo")
+;; => :user/foo
 
 ;; keyword in current namespace
-user=> (keyword (str *ns*) "foo")
-:user/foo
+(keyword (str *ns*) "foo")
+;; => :user/foo

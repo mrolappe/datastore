@@ -1,2 +1,3 @@
-user=> (pr "foo")
-"foo"nil
+(pr "foo")
+;; > "foo"
+;; => nil

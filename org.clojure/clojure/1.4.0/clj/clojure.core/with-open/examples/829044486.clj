@@ -5,9 +5,9 @@
 ;; Please note that reading a file a character at a time is not 
 ;; very efficient.
 
-user=> (with-open [r (java.io.FileReader. "myfile.txt")] 
-         (loop [c (.read r)] 
-           (if (not= c -1)
-             (do 
-               (print (char c)) 
-               (recur (.read r))))))
+(with-open [r (java.io.FileReader. "myfile.txt")] 
+  (loop [c (.read r)] 
+    (if (not= c -1)
+      (do 
+        (print (char c)) 
+        (recur (.read r))))))

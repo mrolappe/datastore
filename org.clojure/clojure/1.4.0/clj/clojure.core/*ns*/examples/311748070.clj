@@ -1,2 +1,2 @@
-user=> *ns*
-#<Namespace user>
+*ns*
+;; => #<Namespace user>

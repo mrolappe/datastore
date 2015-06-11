@@ -1,2 +1,2 @@
-user=> (cast Integer 1)  
-1
+(cast Integer 1)  
+;; => 1

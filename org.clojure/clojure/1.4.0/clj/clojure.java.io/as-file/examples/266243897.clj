@@ -1,3 +1,4 @@
-user=> (use 'clojure.java.io)
-user=> (.exists (as-file "myfile.txt"))
-false
+(require '[clojure.java.io :refer [as-file]])
+
+(.exists (as-file "myfile.txt"))
+;; => false

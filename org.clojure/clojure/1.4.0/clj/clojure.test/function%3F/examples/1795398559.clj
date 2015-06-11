@@ -1,11 +1,12 @@
-user> (defn foo [] (println "foo"))
-#'user/foo
+(require '[clojure.test :refer [function?]])
 
-user> (def bar "bar")
-#'user/bar
+(defn foo []
+  (println "foo"))
 
-user> (clojure.test/function? foo)
-true
+(def bar "bar")
 
-user> (clojure.test/function? bar)
-false
+(function? foo)
+;; => true
+
+(function? bar)
+;; => false

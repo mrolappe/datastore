@@ -1,4 +1,5 @@
-user=> (first nil)
-nil
-user=> (first [])
-nil
+(first nil)
+;; => nil
+
+(first [])
+;; => nil

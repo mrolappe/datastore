@@ -1,2 +1,5 @@
-user=> (clojure.string/lower-case "MiXeD cAsE")
-"mixed case"
+(require '[clojure.string :refer [lower-case]])
+;; => nil
+
+(lower-case "MiXeD cAsE")
+;; => "mixed case"

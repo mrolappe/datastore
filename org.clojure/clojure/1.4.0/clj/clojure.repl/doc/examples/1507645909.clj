@@ -1,4 +1,9 @@
-user> (doc clojure.core)
--------------------------
-clojure.core
-  Fundamental library of the Clojure language
+(require '[clojure.repl :refer [doc]])
+
+(doc clojure.core)
+;; Prints
+;; > -------------------------
+;; > clojure.core
+;; >   Fundamental library of the Clojure language
+;;
+;; => nil

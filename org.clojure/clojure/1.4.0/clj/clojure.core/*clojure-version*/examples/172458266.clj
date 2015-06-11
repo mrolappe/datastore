@@ -1,3 +1,4 @@
+;; On an old version of Clojure
 
-user=> *clojure-version*
-{:interim true, :major 1, :minor 2, :incremental 0, :qualifier "master"}
+*clojure-version*
+;; => {:interim true, :major 1, :minor 2, :incremental 0, :qualifier "master"}
