@@ -1,3 +1,9 @@
+## Arities
+
+    [ns sym] -> nil
+
+## Usage
+
 Removes a mapping for a symbol from the target namespace.
 
 Namespace mappings represent top level bindings created by
