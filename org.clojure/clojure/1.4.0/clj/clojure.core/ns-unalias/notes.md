@@ -1,3 +1,9 @@
+## Arities
+
+    [ns sym] -> nil
+
+## Usage
+
 Removes an alias for another namespace from the target namespace.
 
 Note that aliases are not mappings. Aliases are abbreviations for other
