@@ -8,7 +8,7 @@ Reads a form from clj::clojure.core/*in* returning the read form.
 
 ## Notes
 
-You *SHOULD NOT* use `clojure.core/read` or `clojure.core/read-string` to read data from untrusted sources.
+You *SHOULD NOT* use clj::clojure.core/read or clj::clojure.core/read-string to read data from untrusted sources.
 They were designed only for reading Clojure code and data from trusted sources (e.g.
 files that you know you wrote yourself, and no one else has permission to modify them).
 
