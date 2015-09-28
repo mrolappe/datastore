@@ -1,3 +1,13 @@
+## Arities
+
+    [] -> Any
+
+## Docs
+
+Reads a form from `*in*`, returning the read form.
+
+## Notes
+
 You *SHOULD NOT* use `clojure.core/read` or `clojure.core/read-string` to read data from untrusted sources.
 They were designed only for reading Clojure code and data from trusted sources (e.g.
 files that you know you wrote yourself, and no one else has permission to modify them).
