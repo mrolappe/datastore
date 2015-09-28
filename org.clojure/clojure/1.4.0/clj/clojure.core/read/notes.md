@@ -10,7 +10,7 @@ Reads a form from clj::clojure.core/*in* returning the read form.
 
 You *SHOULD NOT* use clj::clojure.core/read or clj::clojure.core/read-string to read data from untrusted sources.
 They were designed only for reading Clojure code and data from trusted sources (e.g.
-files that you know you wrote yourself, and no one else has permission to modify them).
+files that you know you wrote yourself, and no one else has permission to modify them). Forms prefixed with `#=` will be evaluated by the reader (or not) depending on the value of clj::clojure.core/*read-eval* see that article for more on this. As of Clojure 1.5.0 this has been officially considered an [undocumented feature](https://groups.google.com/forum/#!msg/clojure-dev/zG90eRnbbJQ/o7ZrWZtobHgJ).
 
 Instead, either:
 
