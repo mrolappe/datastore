@@ -4,7 +4,7 @@
 
 ## Docs
 
-Reads a form from `*in*`, returning the read form.
+Reads a form from clj::clojure.core/*in* returning the read form.
 
 ## Notes
 
