@@ -18,3 +18,10 @@ Supported modifiers are:
 - `:let [binding-form expr ...]` which establishes normal non-iterated bindings
 - `:while form` which allows for the termination of the sequence when `form` is truthy
 - `:when form` which continues unless `form` is truthy
+
+## Notes
+
+For is lazy! This means that you can't really use for to express
+imperatively performing some operation a bunch of times as one would
+with an imperative loop. If that's what you're after,
+clj::clojure.core/doseq is the tool you want.
