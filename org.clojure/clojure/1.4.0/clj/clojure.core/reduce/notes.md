@@ -25,5 +25,5 @@ Clojure's fold right.
 ## Notes
 
 While clj::clojure.core/into may seem to do the same thing as
-`(reduce conj ...)`, into should be preferred as it is able to make use of
+`(reduce conj ...)`, into should be preferred as it is able to use
 transients for a significant speedup.
