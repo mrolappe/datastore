@@ -12,7 +12,7 @@ on the concrete type.
 ## Notes
 
 - If `coll` is nil, builds a list.
-- Lists (clj::clojure.core/list) are add to at the front
+- Lists (clj::clojure.core/list) are added to at the front
 - Vectors (clj::clojure.core/vector) are added to at the back
 - Queues are added to at the back
 - Maps may have `[k v]` pairs added and aren't generally ordered
