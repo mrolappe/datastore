@@ -15,8 +15,12 @@ on the concrete type.
 - Lists (clj::clojure.core/list) are added to at the front
 - Vectors (clj::clojure.core/vector) are added to at the back
 - Queues are added to at the back
-- Maps may have `[k v]` pairs added and aren't generally ordered
-- Sets may have elements added and aren't generally ordered
+- Maps may have `[k v]` pairs added. Specific implementations are
+  ordered (clj::clojure.core/sorted-map) but generic map types impose
+  no ordering on `[k v]` pairs.
+- Sets may have elements added. Specific implementations are ordered
+  (clj::clojure.core/sorted-set) but generic sets impose no ordering
+  on elements.
 
 Not to be confused with clj::clojure.core/cons
 
