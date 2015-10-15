@@ -15,4 +15,9 @@ nested clj::clojure.core/if forms.
 ## Notes
 
 - `(cond)` returns nil.
-- returns nil if no tests returned true
+- Returns nil if no tests returned true
+- It is a common pattern to use the keyword `:else` as the test on the
+  final clause of a `cond` form. `:else` has no special meaning, it is
+  simply a truthy value which clearly communicates that the following
+  clause is the final else branch of the entire cond form. `:else`
+  should be preferred to the `true` constant for clarity's sake.
