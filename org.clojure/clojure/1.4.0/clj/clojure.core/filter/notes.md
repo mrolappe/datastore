@@ -13,4 +13,4 @@ Returns a transducer when no collection is provided.
 ## Notes
 
  - See also clj::clojure.core/keep which should be preferred to
-   `(->> col (filter p) (map f))`
+   `(->> col  (map f) (filter identity))`
