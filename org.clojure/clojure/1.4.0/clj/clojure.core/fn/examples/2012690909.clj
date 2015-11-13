@@ -4,7 +4,7 @@
 
 ;; anonymous function with a name.  not so anonymous now is it?
 ;; this is useful in stack traces
-(fn add[a b] (+ a b))
+(fn add [a b] (+ a b))
 
 ;; anonymous function with two params, the second is destructed
 (reduce (fn [m [k v]] (assoc m v k)) {} {:b 2 :a 1 :c 3})
