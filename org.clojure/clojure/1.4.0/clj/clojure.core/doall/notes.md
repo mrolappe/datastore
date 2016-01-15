@@ -12,6 +12,9 @@ first `n` will have been forced and will reside in memory.
 
 ## Notes
 
+A wrapper around clj::clojure.core/dorun which returns the head of the
+forced `coll`.
+
 When lazy sequences are produced via functions that have side effects,
 any effects other than those needed to produce the first element in
 the seq do not occur until the seq is consumed. See
