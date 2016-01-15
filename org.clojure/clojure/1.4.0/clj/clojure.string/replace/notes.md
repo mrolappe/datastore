@@ -6,7 +6,7 @@
 
 Replaces all instance of match with replacement in s.
 
-match/replacement must be one of
+`match, replacement` must be one of the following pairs of types,
 - String, String
 - Char, Char
 - Pattern, String
