@@ -1,5 +1,5 @@
-;; When there are less than n items in the coll, partition's behaviour
-;; depends on whether there is a pad or not
+;; When there are fewer than n items in the coll, partition's
+;; behaviour depends on whether there is a pad coll or not
 
 ;; without pad
 (partition 10 [1 2 3 4])
