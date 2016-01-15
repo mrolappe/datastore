@@ -1,6 +1,6 @@
 ## Arities
 
-    [s match replacement]
+    [s match replacement] -> String
 
 ## Docs
 
