@@ -1,9 +1,9 @@
 ## Arities
 
-    []
-    [x]
-    [x y]
-    [x y & zs]
+    [] -> coll
+    [x] -> coll
+    [x y] -> coll
+    [x y & zs] -> coll
 
 ## Docs
 
