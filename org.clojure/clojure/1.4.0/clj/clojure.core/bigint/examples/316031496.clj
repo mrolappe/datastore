@@ -7,5 +7,5 @@
 (= 42 (bigint 42))
 ;; => true
 
-(= 42 (clojure.lang.BigInt/fromBigInteger (BigInteger. "42"))
+(= 42 (clojure.lang.BigInt/fromBigInteger (BigInteger. "42")))
 ;; => true

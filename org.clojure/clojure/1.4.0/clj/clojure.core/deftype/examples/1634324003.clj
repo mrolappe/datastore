@@ -7,7 +7,7 @@
   (getTransferDataFlavors
     [this]
     (into-array DataFlavor [DataFlavor/imageFlavor]))
-  
+
   (isDataFlavorSupported
     [this flavor]
     (= DataFlavor/imageFlavor flavor))

@@ -1,16 +1,16 @@
-; :as example 
+;; :as example.
+;; :as names the group you just destructured, letting you refer to that term.
 
-user=> (let [[x y :as my-point] [5 3]]
-         (println x y)
-         (println my-point))
+(let [[x y :as my-point] [5 3]]
+  (println x y)
+  (println my-point))
+;; > 5 3
+;; > [5 3]
+;; => nil
 
-5 3
-[5 3]
+;; equivalent to (and far better than)
 
-; :as names the group you just destructured.
-
-; equivalent to (and better than)
-
-user=> (let [[x y] [5 3]
-             my-point [x y]]
-         ;...
+(let [my-point [5 3]
+      [x y]    my-point]
+  (println x y)
+  (println my-point))

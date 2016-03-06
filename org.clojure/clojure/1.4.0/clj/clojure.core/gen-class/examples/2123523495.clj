@@ -1,17 +1,17 @@
 ;; I found managing state a bit confusing at first.
 ;; here's a dumb little class with a getter and setter for a "location" field.
 
-(ns com.example )
+(ns com.example)
 
 (gen-class
-      :name com.example.Demo
-      :state state
-      :init init
-      :prefix "-"
-      :main false
+ :name com.example.Demo
+ :state state
+ :init init
+ :prefix "-"
+ :main false
       ;; declare only new methods, not superclass methods
-      :methods [[setLocation [String] void]
-                [getLocation [] String]])
+ :methods [[setLocation [String] void]
+           [getLocation [] String]])
 
 ;; when we are created we can set defaults if we want.
 (defn -init []
@@ -21,7 +21,7 @@
 ;; little functions to safely set the fields.
 (defn setfield
   [this key value]
-      (swap! (.state this) into {key value}))
+  (swap! (.state this) into {key value}))
 
 (defn getfield
   [this key]

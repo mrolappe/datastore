@@ -4,5 +4,5 @@
 
   (spit out-file "" :append false)
   (with-open [out-data (io/writer out-file)]
-      (csv/write-csv out-data out-sos)))
+    (csv/write-csv out-data out-sos)))
 

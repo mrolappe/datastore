@@ -24,9 +24,9 @@
 ;; => #'user/queue
 
 (def elements (take 10 (repeatedly 
-                        (fn[](create-event-element 
-                              (delay (update (rand-int 20)))
-                              (rand))))))
+                        (fn [] (create-event-element 
+                                (delay (update (rand-int 20)))
+                                (rand))))))
 ;; => #'user/elements
 
 (def c (atom 0))
@@ -70,9 +70,9 @@
 ;; => 4
 (def elements
   (take 10 (repeatedly 
-            (fn[](create-event-element 
-                  (delay (update (rand-int 20)))
-                  (rand))))))
+            (fn [] (create-event-element 
+                    (delay (update (rand-int 20)))
+                    (rand))))))
 ;; => #'user/elements
 ;; if we check 'element', delay objects will be evaluated. The below is
 ;; this example. Please compare the above with the below.
@@ -126,4 +126,4 @@ elements
 ;; > c= 1
 ;; > time= 0.9406336968276247 :5
 ;; => nil
- 
+

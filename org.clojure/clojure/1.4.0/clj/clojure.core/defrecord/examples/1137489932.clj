@@ -10,7 +10,7 @@
 ;; method:  String getContentTypeFor(String fileName)
 (defrecord Thing [a]
   FileNameMap
-    (getContentTypeFor [this fileName] (str a "-" fileName)))
+  (getContentTypeFor [this fileName] (str a "-" fileName)))
 -> user.Thing
 
 ;; construct an instance of the record

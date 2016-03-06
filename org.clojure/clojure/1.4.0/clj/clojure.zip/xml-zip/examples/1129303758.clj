@@ -10,8 +10,3 @@
 ;; make a zippper pointing at the children to the topnode in somedata.xml
 (z/children xmlzipper)
 
- 
-
-
-
-

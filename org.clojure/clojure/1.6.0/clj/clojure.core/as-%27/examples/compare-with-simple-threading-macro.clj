@@ -6,6 +6,6 @@
 
 ;; Using as->
 (as-> shape s
-  (rotate s 30)
-  (scale s 1.2)
-  (translate s 10 -2))
+      (rotate s 30)
+      (scale s 1.2)
+      (translate s 10 -2))

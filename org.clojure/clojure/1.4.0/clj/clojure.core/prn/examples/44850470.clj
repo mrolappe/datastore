@@ -2,7 +2,7 @@
 ;; > "fred" 1
 ;; => nil
 
-(def items [ "hello" :a 1 (list :b 2) \c {:d 4} #{5 6 7} ])
+(def items ["hello" :a 1 (list :b 2) \c {:d 4} #{5 6 7}])
 ;; => #'user/items
 
 ;; prn outputs items in a machine-readable format, such as in a source

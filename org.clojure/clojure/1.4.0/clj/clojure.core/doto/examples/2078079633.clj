@@ -1,6 +1,6 @@
 ;; quick demonstration of using a Collections function on the resulting ArrayList
 
-(def al (doto (java.util.ArrayList.) (.add 11) (.add 3)(.add 7)))
+(def al (doto (java.util.ArrayList.) (.add 11) (.add 3) (.add 7)))
 ;; => #'user/al
 
 al

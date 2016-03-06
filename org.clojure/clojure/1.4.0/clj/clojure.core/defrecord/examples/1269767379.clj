@@ -11,16 +11,14 @@
 
 (defrecord Employee [name surname])
 
-
 ; Namescape 2 in "my/queries.clj", where a defrecord is used
 (ns my.queries
   (:require my.data)
   (:import [my.data Employee]))
 
 (println
-  "Employees named Albert:"
-  (filter #(= "Albert" (.name %))
-    [(Employee. "Albert" "Smith")
-     (Employee. "John" "Maynard")
-     (Employee. "Albert" "Cheng")]))
-  
+ "Employees named Albert:"
+ (filter #(= "Albert" (.name %))
+         [(Employee. "Albert" "Smith")
+          (Employee. "John" "Maynard")
+          (Employee. "Albert" "Cheng")]))

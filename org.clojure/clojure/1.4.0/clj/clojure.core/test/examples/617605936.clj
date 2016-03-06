@@ -5,8 +5,9 @@
             (assert (= (my-function 4 4) 8)))}
   ([x y] (+ x y)))
 
-(test #'my-function)  ;equal to (test (var my-function))
-=> :ok
+;; equal to (test (var my-function))
+(test #'my-function)  
+;; => :ok
 
 -----------------------------------------------------------------------
 
@@ -18,7 +19,7 @@
   ([x y] (+ x y)))
 
 (test #'my-function)
-=> java.lang.AssertionError: Assert failed: (= (my-function 99 4) 8) (NO_SOURCE_FILE:0
+;; => java.lang.AssertionError: Assert failed: (= (my-function 99 4) 8) (NO_SOURCE_FILE:0
 
 ---------------------------------------------------------------------------
 
@@ -27,4 +28,4 @@
   ([x y] (+ x y)))
 
 (test #'my-function)
-=> :no-test
+;; => :no-test

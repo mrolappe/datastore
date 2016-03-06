@@ -1,5 +1,5 @@
 ;; First we define a function that presumably have some expensive computation.
-(defn myfunc[a] (println "doing some work") (+ a 10))
+(defn myfunc [a] (println "doing some work") (+ a 10))
 ;; => #'user/myfunc
 
 ;; Next we create a memoized version of the function.

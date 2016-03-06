@@ -2,20 +2,20 @@
 ;does not have to be a symbol, but can be anything (in this case, it's a string)
 
 (defmulti greeting
-  (fn[x] (x "language")))
+  (fn [x] (x "language")))
 
 ;params is not used, so we could have used [_]
 (defmethod greeting "English" [params]
- "Hello!")
+  "Hello!")
 
 (defmethod greeting "French" [params]
- "Bonjour!")
+  "Bonjour!")
 
 ;then can use this like this:
 (def english-map {"id" "1", "language" "English"})
 (def  french-map {"id" "2", "language" "French"})
 
-=>(greeting english-map)
+=> (greeting english-map)
 "Hello!"
-=>(greeting french-map)
+=> (greeting french-map)
 "Bounjour!"

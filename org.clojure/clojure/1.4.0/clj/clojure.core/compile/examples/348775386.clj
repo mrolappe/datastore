@@ -1,5 +1,5 @@
-(compile (symbol "clojure.java.io")
+(compile (symbol "clojure.java.io"))
 ;; => clojure.java.io
 
-(compile (symbol "unexistent.namespace")
+(compile (symbol "unexistent.namespace"))
 ;; => FileNotFoundException Could not locate unexistent/namespace__init.class or unexistent/namespace.clj on classpath:   clojure.lang.RT.load (RT.java:432)

@@ -11,4 +11,4 @@
        (ref-set start-work true)))
     (when @start-work 
       ;; launch side-effects here
-      )))
+)))

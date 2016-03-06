@@ -7,8 +7,8 @@
 (swap! atm into [5])
 ;; => #<CompilerException java.lang.IllegalStateException: Invalid reference state (NO_SOURCE_FILE:0)>
 
-set-validator! atm nil)
+(set-validator! atm nil)
 ;; => nil
 
-(swap! atm into [5]))
+(swap! atm into [5])
 ;; => [2 5]

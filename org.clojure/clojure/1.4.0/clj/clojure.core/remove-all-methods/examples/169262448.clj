@@ -21,7 +21,7 @@
 ;; > Circle:[2 3]3.3
 ;; => nil
 
-(println (tos (line [1 1][0 0])))
+(println (tos (line [1 1] [0 0])))
 ;; > Line:[1 1][0 0]
 ;; => nil
 
@@ -32,6 +32,6 @@
 ;; > java.lang.IllegalArgumentException: No method in multimethod 'tos' for dispatch
 ;; => value: :circle (NO_SOURCE_FILE:0)
 
-(println (tos (line [1 1][0 0])))
+(println (tos (line [1 1] [0 0])))
 ;; > java.lang.IllegalArgumentException: No method in multimethod 'tos' for dispatch
 ;; => value: :line (NO_SOURCE_FILE:0)

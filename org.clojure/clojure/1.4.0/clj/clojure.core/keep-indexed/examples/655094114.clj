@@ -4,13 +4,13 @@
     (true? all) (keep-indexed #(if (= x %2) %1) coll)
     :else (first (keep-indexed #(if (= x %2) %1) coll))))
 
-(position [1 1] [[1 0][1 1][2 3][1 1]])
+(position [1 1] [[1 0] [1 1] [2 3] [1 1]])
 ;; => 1
 
-(position [1 1] [[1 0][1 1][2 3][1 1]] :from-end true)
+(position [1 1] [[1 0] [1 1] [2 3] [1 1]] :from-end true)
 ;; => 3
 
-(position [1 1] [[1 0][1 1][2 3][1 1]] :all true)
+(position [1 1] [[1 0] [1 1] [2 3] [1 1]] :all true)
 ;; => (1 3)
 
 (def foo (shuffle (range 10)))

@@ -14,7 +14,7 @@
   price is same, the lower id is superior to the higher one."
   [el1 el2]
   (if (or  (< (:price el1) (:price el2))
-           (and (= (:price el1) (:price el2))(< (:id el1) (:id el2))))
+           (and (= (:price el1) (:price el2)) (< (:id el1) (:id el2))))
     true
     false))
 
