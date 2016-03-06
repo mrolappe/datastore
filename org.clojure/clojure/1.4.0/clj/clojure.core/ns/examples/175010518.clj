@@ -3,4 +3,4 @@
   (:use clojure.test))
 
 (deftest test
- (is (= "ABC" (str/capitalize "abc")))
+  (is (= "ABC" (str/capitalize "abc"))))

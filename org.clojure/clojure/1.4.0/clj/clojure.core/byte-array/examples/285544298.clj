@@ -5,7 +5,7 @@
 (def bees (byte-array 10))
 ;; => #'user/bees
 
-(for [i (range 10)](aset-byte bees i (* i i)))
+(for [i (range 10)] (aset-byte bees i (* i i)))
 ;; => (0 1 4 9 16 25 36 49 64 81)
 
 (vec bees)

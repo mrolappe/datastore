@@ -7,7 +7,7 @@
 (def first-relation #{{:a 1} {:a 2}})
 ;; => #'user/first-relationship
 
-(def second-relation #{{:b 1}{:b 2}})
+(def second-relation #{{:b 1} {:b 2}})
 ;; => #'user/second-relationship
 
 (join first-relation second-relation)

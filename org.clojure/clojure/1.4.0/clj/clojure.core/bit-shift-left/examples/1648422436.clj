@@ -6,8 +6,8 @@
   "sets bit n in long atom ba"
   [n]
   (let [number-set (bit-shift-left 1 n)
-	_          (println "number to set: " number-set)
-	new-array  (bit-or @ba number-set)]
+        _          (println "number to set: " number-set)
+        new-array  (bit-or @ba number-set)]
     (reset! ba new-array)))
 
 (defn get-ba 
@@ -26,4 +26,4 @@
   ;;number to set:  2
   ;;modulo because long has only 64 bit
   ;;also note that long always is two-complemented (signed) in java implementation
-  )
+)

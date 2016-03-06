@@ -26,7 +26,6 @@
   String
   (foo [s] (str "foo-B-" (.toLowerCase s))))
 
-
 (require '[abstraction-a :as a])
 
 (require '[abstraction-b :as b])

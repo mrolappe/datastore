@@ -8,7 +8,7 @@
 ;; => [[2 4 6] [8 14 4] [4 10 4]]
 
 (let [s [1 '(2 3 [1])]] 
-         (w/postwalk #(if (seq? %) (vec %) %) s))
+  (w/postwalk #(if (seq? %) (vec %) %) s))
 ;; => [1 [2 3 [1]]]
 
 (w/walk (comp vec reverse) identity {0 :start 1 :inprogress 2 :end})

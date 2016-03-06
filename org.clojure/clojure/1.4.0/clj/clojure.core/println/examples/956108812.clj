@@ -2,7 +2,7 @@
 ;; > Hello world.
 ;; => nil
 
-(def items [ "hello" :a 1 (list :b 2) \c {:d 4} #{5 6 7} ])
+(def items ["hello" :a 1 (list :b 2) \c {:d 4} #{5 6 7}])
 ;; => #'user/items
 
 ;; println is for human-readable output, like a report. Note the lack of quotes around the string "hello" and the unescaped letter "c". 

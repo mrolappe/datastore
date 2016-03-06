@@ -11,14 +11,13 @@
   (->> (map - c1 c2) (map #(* % %)) (reduce +)))
 
 (def key-colours
-     {[224 41 224] :purple
-      [24 180 46] :green
-      [12 129 245] :blue
-      [254 232 23] :yellow
-      [233 233 233] :white
-      [245 27 55] :red
-      [231 119 41] :orange
-      })
+  {[224 41 224] :purple
+   [24 180 46] :green
+   [12 129 245] :blue
+   [254 232 23] :yellow
+   [233 233 233] :white
+   [245 27 55] :red
+   [231 119 41] :orange})
 
 (defn rgb-to-key-colour
   "Find colour in colour map closest to the supplied [r g b] triple"

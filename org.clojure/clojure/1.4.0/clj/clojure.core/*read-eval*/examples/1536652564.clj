@@ -2,7 +2,7 @@
 
 (binding [*read-eval* false] (read-string "#=(eval (def x 3))"))
 => EvalReader not allowed when *read-eval* is false.
-  [Thrown class java.lang.RuntimeException]
+[Thrown class java.lang.RuntimeException]
 
 ;;remove the anonymous function:
 

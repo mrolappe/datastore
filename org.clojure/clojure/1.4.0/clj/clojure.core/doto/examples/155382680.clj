@@ -28,7 +28,7 @@
   (.add al -1)
   (dotimes [i 3] (.add al i))
   al) ;; return the ArrayList
-#<ArrayList [-2, -1, 0, 1, 2]>
+#<ArrayList [-2, -1, 0, 1, 2] >
 ;; exactly what we intended
 
 ;; Another option is to wrap 'dotimes' in a function literal
@@ -36,5 +36,5 @@
   (.add -2)
   (.add -1)
   (#(dotimes [i 3] (.add % i))))
-#<ArrayList [-2, -1, 0, 1, 2]>
+#<ArrayList [-2, -1, 0, 1, 2] >
 ;; exactly what we intended again

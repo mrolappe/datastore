@@ -5,7 +5,7 @@
     ;; Java's stdout is line buffered
     ;; So we have to force flush it
     (flush)
-    
+
     (let [reader (java.io.BufferedReader. *in*) ; stdin
           line   (.readLine reader)
           value  (try

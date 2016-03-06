@@ -12,8 +12,8 @@
 (defrecord Mean [last-winner]
   Player
   (choose [_]
-          (if last-winner
-            last-winner
-            (random-choice)))
+    (if last-winner
+      last-winner
+      (random-choice)))
   (update-strategy [_ me you]
-                   (->Mean (when (iwon? me you) me))))
+    (->Mean (when (iwon? me you) me))))

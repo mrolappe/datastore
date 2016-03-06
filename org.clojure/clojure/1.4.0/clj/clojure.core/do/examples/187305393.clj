@@ -4,11 +4,11 @@
 ;;
 ;; do w/o args returns nil.
 
-=> (do
-     (println "LOG: Computing...")
-     (+ 1 1))
-LOG: Computing...
-2
+(do
+  (println "LOG: Computing...")
+  (+ 1 1))
+;; > LOG: Computing...
+;; => 2
 
-=> (do)
-nil
+(do)
+;; => nil

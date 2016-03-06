@@ -3,7 +3,7 @@
 (defn add-mousepressed-listener
   [component f & args]
   (let [listener (proxy [MouseAdapter] []
-                     (mousePressed [event]
-                                   (apply f event args)))]
+                   (mousePressed [event]
+                     (apply f event args)))]
     (.addMouseListener component listener)
     listener))

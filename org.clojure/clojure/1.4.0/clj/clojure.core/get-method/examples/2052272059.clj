@@ -20,10 +20,10 @@
 ;; > Circle:[2 3]3.3
 ;; => nil
 
-(println (tos (line [1 1][0 0])))
+(println (tos (line [1 1] [0 0])))
 ;; > Line:[1 1][0 0]
 ;; => nil
 
-(println ((get-method tos :line) (line [1 2][3 4]) ))
+(println ((get-method tos :line) (line [1 2] [3 4])))
 ;; > Line:[1 2][3 4]
 ;; => nil

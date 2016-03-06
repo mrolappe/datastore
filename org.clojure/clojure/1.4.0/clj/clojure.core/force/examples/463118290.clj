@@ -1,10 +1,10 @@
 ;; the tarai benchmark comparing non-lazy version with lazy-version
 (defn tarai [x y z]
   (if (<= (x) (y))
-      (y)
-      (recur (fn [] (tarai (fn [] (- (x) 1)) y z))
-             (fn [] (tarai (fn [] (- (y) 1)) z x))
-             (fn [] (tarai (fn [] (- (z) 1)) x y)))))
+    (y)
+    (recur (fn [] (tarai (fn [] (- (x) 1)) y z))
+           (fn [] (tarai (fn [] (- (y) 1)) z x))
+           (fn [] (tarai (fn [] (- (z) 1)) x y)))))
 
 (defn tarai-d [x y z]
   (if (<= (force x) (force y))
@@ -26,7 +26,7 @@
 ;; > "Elapsed time: 138.059968 msecs"
 ;; => nil
 
-(dotimes [_ 10 ]  (time (tarai-d 192 96 0)))
+(dotimes [_ 10]  (time (tarai-d 192 96 0)))
 ;; > "Elapsed time: 3.181795 msecs"
 ;; > "Elapsed time: 2.960096 msecs"
 ;; > "Elapsed time: 3.000855 msecs"

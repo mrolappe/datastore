@@ -17,5 +17,5 @@
 
 ;; @#' is the macros of (deref (var first/foo))
 (with-redefs [first/foo 2]
-  (deref (var first/foo))
+  (deref (var first/foo)))
 ;; => 2

@@ -20,6 +20,3 @@
 ;; => #<CompilerException java.net.MalformedURLException: no protocol: clojuredocs.org>
 
 
-
-
-

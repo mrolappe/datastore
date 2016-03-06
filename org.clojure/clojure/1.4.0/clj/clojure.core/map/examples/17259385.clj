@@ -12,7 +12,7 @@
 ;; => (2 4 6)
 
 ;; map is often used in conjunction with the # reader macro:
-(map #(str "Hello " % "!" ) ["Ford" "Arthur" "Tricia"])
+(map #(str "Hello " % "!") ["Ford" "Arthur" "Tricia"])
 ;; => ("Hello Ford!" "Hello Arthur!" "Hello Tricia!")
 
 ;; A useful idiom to pull "columns" out of a collection of collections. 

@@ -4,6 +4,6 @@
 
 (defn my-reverse
   ([a-list]
-     (cond (= a-list nil) nil
-           :else (cons (last a-list)
-                       (my-reverse (butlast a-list))))))
+   (cond (= a-list nil) nil
+         :else (cons (last a-list)
+                     (my-reverse (butlast a-list))))))

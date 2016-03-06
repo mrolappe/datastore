@@ -5,7 +5,7 @@
                              body :body 
                              method :request-method} 
                  :request}]
-             
+
              (condp = method
                :get (my-get-exists-fn)
                :post (my-post-exists-fn))))

@@ -1,9 +1,9 @@
 ;; Maps can be constructed from a sequence of 2-vectors or a sequence 
                                         ; of maps
-(into (sorted-map) [ [:a 1] [:c 3] [:b 2] ] )
+(into (sorted-map) [[:a 1] [:c 3] [:b 2]])
 ;; => {:a 1, :b 2, :c 3}
 
-(into (sorted-map) [ {:a 1} {:c 3} {:b 2} ] )
+(into (sorted-map) [{:a 1} {:c 3} {:b 2}])
 ;; => {:a 1, :b 2, :c 3}
 
 ;; When maps are the input source, they convert into an unordered sequence 

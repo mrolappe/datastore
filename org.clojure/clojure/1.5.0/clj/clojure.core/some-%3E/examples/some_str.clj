@@ -1,6 +1,6 @@
 (defn foo [x]
   (some-> x
-    (.substring 1)))
+          (.substring 1)))
 ;; => #'user/foo
 
 (foo nil)

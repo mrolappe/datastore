@@ -19,7 +19,7 @@
 (def cc (circle [2 3] 3.3))
 ;; => #'user/cc
 
-(def ll (line [1 1][0 0]))
+(def ll (line [1 1] [0 0]))
 ;; => #'user/ll
 
 (tos cc)

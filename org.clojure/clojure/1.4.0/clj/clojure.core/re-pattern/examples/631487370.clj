@@ -27,11 +27,7 @@
 ;; If you want to embed (ignored) whitespace and comments from #
 ;; characters until end-of-line in your regex patterns, start the
 ;; pattern with (?x)
-(re-find #"(?x)  # allow embedded whitespace and comments
-                  \\    # backslash
-                  \d+   # one or more digits
-                  \s+   # whitespace
-                  \S+   # non-whitespace"
+(re-find #"(?x)  # allow embedded whitespace and comments"
          "\\ it sh0uld match in \\5 here somewhere.")
 ;; => "\\5 here"
 

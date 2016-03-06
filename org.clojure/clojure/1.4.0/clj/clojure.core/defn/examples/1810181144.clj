@@ -7,9 +7,9 @@
                       c 3 ;; c is 3 when not specified on call
                       d 0 ;; d is 0 --//--
                       ;; e takes nil if not specified on call
-                      }
+}
                  :as mapOfParamsSpecifiedOnCall ;; takes nil if no extra params(other than the required ones) are specified on call
-                 }]
+}]
   (println req1 req2 mapOfParamsSpecifiedOnCall a b c d e))
 
 (somefn 9 10 :b 2 :d 4)

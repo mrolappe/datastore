@@ -1,4 +1,4 @@
-(def a (to-array-2d [[1 2 3][4 5 6]]))
+(def a (to-array-2d [[1 2 3] [4 5 6]]))
 ;; => #'user/a
 
 (alength a)

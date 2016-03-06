@@ -14,7 +14,7 @@
 
 ;; default handling
 (defmethod greeting :default [params]
- (throw (IllegalArgumentException. 
+  (throw (IllegalArgumentException. 
           (str "I don't know the " (params "language") " language"))))
 
 ;; then can use this like this:

@@ -4,10 +4,10 @@
   [x]
   (cond-> x
     (even? x) ;; If x is even, add 1 to make it odd
-    ,,(inc)
+    (inc)
 
     :true     ;; Double every x with a truthy constant
-    ,,(* 2)))
+    (* 2)))
 ;; => #'user/foo
 
 (foo 3)

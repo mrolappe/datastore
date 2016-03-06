@@ -4,7 +4,6 @@
     (dotimes [_ 100]
       (.write w "I am being written to a file."))))
 
-
 (time (time-test))
 ;; > "Elapsed time: 19.596371 msecs"
 ;; => nil

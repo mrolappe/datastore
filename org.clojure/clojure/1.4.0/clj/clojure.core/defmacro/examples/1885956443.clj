@@ -16,5 +16,5 @@
 
   (spit out-file "" :append false)
   (with-open [out-data (io/writer out-file)]
-      (csv/write-csv out-data (map #(concat % [""]) out-sos))))
+    (csv/write-csv out-data (map #(concat % [""]) out-sos))))
 
