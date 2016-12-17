@@ -5,7 +5,7 @@
 ## Docs
 
 For is a macro for concisely expressing list comprehensions. Takes a
-vector of one or sequence expressions, each of which may be followed
+vector of one or more sequence expressions, each of which may be followed
 by zero or more modifiers, and yields a lazy sequence of evaluations
 of the body expression. Unlike regular bindings established by
 clj::clojure.core/let, sequence expressions are bindings understood to
